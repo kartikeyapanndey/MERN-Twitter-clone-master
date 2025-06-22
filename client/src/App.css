@@ -641,3 +641,134 @@ body {
         font-size: 0.9rem;
     }
 }
+
+/* Center the login page */
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg, #181c23);
+}
+
+.homeContainer {
+    background: var(--card, #232a34);
+    padding: 2.5rem 2.5rem 2rem 2.5rem;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px var(--accent1, #1da1f2), 0 2px 16px rgba(0,0,0,0.35);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 340px;
+    max-width: 95vw;
+}
+
+.homeContainer-logo {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    color: var(--blue, #1da1f2);
+    filter: drop-shadow(0 0 8px var(--blue, #1da1f2));
+}
+
+.homeContainer-header h2 {
+    color: var(--blue, #1da1f2);
+    margin-bottom: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+}
+
+.googleSignIn {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    background: #fff;
+    color: #222;
+    border-radius: 8px;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    border: none;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 2px 8px var(--accent2, #1da1f2);
+    font-size: 1.1rem;
+    transition: box-shadow 0.2s, background 0.2s;
+    text-decoration: none;
+}
+.googleSignIn:hover {
+    box-shadow: 0 4px 18px var(--accent2, #1da1f2);
+    background: #f0f0f0;
+}
+
+.homeContainer-hr {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 1rem 0;
+}
+.homeContainer-hr hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid var(--border, #38444d);
+    margin: 0 8px;
+}
+.homeContainer-hr span {
+    color: var(--text-light, #8899a6);
+    font-size: 1rem;
+}
+
+.homeContainer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.homeContainer-input {
+    padding: 0.9rem 1.1rem;
+    border-radius: 8px;
+    border: 1.5px solid var(--border, #38444d);
+    background: #232a34;
+    color: var(--text, #fff);
+    font-size: 1.08rem;
+    margin-bottom: 0.5rem;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+.homeContainer-input:focus {
+    outline: none;
+    border: 2px solid var(--blue, #1da1f2);
+    box-shadow: 0 0 8px var(--accent1, #1da1f2);
+    background: #181c23;
+}
+
+.homeContainer-btn {
+    background: linear-gradient(90deg, var(--blue, #1da1f2) 60%, var(--accent2, #1a8cd8) 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.9rem 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 12px var(--accent2, #1a8cd8);
+    margin-top: 0.5rem;
+}
+.homeContainer-btn:hover {
+    background: linear-gradient(90deg, var(--accent3, #0056b3) 0%, var(--blue, #1da1f2) 100%);
+    box-shadow: 0 4px 18px var(--accent3, #0056b3);
+}
+
+.homeContainer-signup {
+    margin-top: 1.5rem;
+    color: var(--text-light, #8899a6);
+    font-size: 1rem;
+    text-align: center;
+}
+.homeContainer-signup a {
+    color: var(--blue, #1da1f2);
+    text-decoration: none;
+    font-weight: 500;
+}
+.homeContainer-signup a:hover {
+    text-decoration: underline;
+}
